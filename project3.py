@@ -1,9 +1,10 @@
 #ProjectEuler Number 3
 #by Josh Smith
 
-max = 1
+#My original solution that works, but DOES NOT WORK FOR LARGE NUMBERS
+'''max = 1
 iter = 0
-value = 600851475143
+value = 13195
 temp = 0
 
 print value
@@ -16,7 +17,20 @@ for i in xrange(1, value/2):
 			boolean = False
 			break;
     iter = iter + 1
-    print (iter/value)*100.0, "%"
+    print iter
     if(boolean == True and temp > max):
 	max = temp
-print max
+print max'''
+
+#Optimal Solution that was derived from some googling, works for large numbers
+n = 600851475143
+i = 2
+#This algorithm is based off the following fact
+#the largest prime factor will never be greater than the square root of n
+
+while i * i < n:
+     while n % i == 0:
+         n = n / i
+     i = i + 1
+
+print n

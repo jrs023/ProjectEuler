@@ -1,4 +1,4 @@
-#ProjectEuler Number 9
+#ProjectEuler Number 11
 #by Josh Smith
 
 import math

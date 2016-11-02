@@ -10,10 +10,9 @@ def is_prime(n):
 bool = False
 i = 2
 j = 0
-while bool == False:
-	if(is_prime(i) == True):
+while j < 10001:
+	if is_prime(i):
 		j += 1
-	if(j == 10001):
-		print i
-		bool = True
 	i += 1
+	
+print i-1

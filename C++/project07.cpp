@@ -10,7 +10,7 @@ bool isPrime(size_t n){
 		return false;
 	}
 
-	for(int i = 2; i < n/2+1; i++){
+	for(int i = 2; i < sqrt(n)+1; i++){
 		if(n%i == 0){
 			return false;
 		}

@@ -41,10 +41,7 @@ for j in range(0,20):
 		if(j < 17 and i < 17):
 			if Matrix[j][i]*Matrix[j+1][i+1]*Matrix[j+2][i+2]*Matrix[j+3][i+3] > maximum:
 				maximum = Matrix[j][i]*Matrix[j+1][i+1]*Matrix[j+2][i+2]*Matrix[j+3][i+3]
-				
 		if(j > 3 and i < 17):
 			if Matrix[j][i]*Matrix[j-1][i+1]*Matrix[j-2][i+2]*Matrix[j-3][i+3] > maximum:
-				maximum = Matrix[j][i]*Matrix[j-1][i+1]*Matrix[j-2][i+2]*Matrix[j-3][i+3]			
-				
-				
-				
+				maximum = Matrix[j][i]*Matrix[j-1][i+1]*Matrix[j-2][i+2]*Matrix[j-3][i+3]
+print maximum
